@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs,array}
+\usepackage{needspace}
+\setlength{\parskip}{0.5em}\setlength{\parindent}{0pt}
+
+\newcounter{q}
+% \questao{origem}: ex. \questao{ENEM 2020 -- Questão 150}
+\newcommand{\questao}[1]{\Needspace{10\baselineskip}\vspace{1em}\refstepcounter{q}\noindent\textbf{Questão \theq}\hfill{\small(#1)}\par\smallskip}
+\newenvironment{alternativas}{\begin{enumerate}[label=(\Alph*),leftmargin=2em,itemsep=0pt]}{\end{enumerate}}
+
+\title{TÍTULO DA LISTA\\Disciplina}
+\date{}
+\begin{document}
+\maketitle
+
+\questao{VESTIBULAR ANO -- Questão N}
+Enunciado em texto.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{figuras/qN.png}
+\end{center}
+
+Pergunta?
+\begin{alternativas}
+\item ...
+\item ...
+\item ...
+\item ...
+\item ...
+\end{alternativas}
+
+\end{document}
